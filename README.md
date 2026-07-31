@@ -3,10 +3,10 @@ A complete digital design flow for a 4-bit synchronous up-counter with synchrono
 
 Repository Structure  
 counter_4bit/  
-├── counter_4bit.v          # RTL source  
-├── tb_counter_4bit.v       # Testbench  
-├── counter_4bit_synth.v    # Synthesized gate-level netlist (Yosys output)  
-├── counter_schematic.png   # Synthesized gate-level schematic  
+├── counter_4bit.v            # RTL source  
+├── counter_4bit_tb.v         # Testbench  
+├── counter_4bit_synth.v      # Synthesized gate-level netlist (Yosys output)  
+├── counter_schematic.png     # Synthesized gate-level schematic  
 └── README.md  
 
 1. Functional Verification  
