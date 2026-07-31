@@ -1,14 +1,16 @@
 # 4-Bit-Synchronous-Counter---RTL-to-Synthesis
 A complete digital design flow for a 4-bit synchronous up-counter with synchronous reset, from RTL design through functional verification to logic synthesis.
 
-**Repository Structure ** 
+**Repository Structure**  
 counter_4bit/  
+```
 ├── counter_4bit.v            # RTL source  
 ├── counter_4bit_tb.v         # Testbench  
 ├── counter_4bit_synth.v      # Synthesized gate-level netlist (Yosys output)  
+├── counter_4bit.vcd          # GTKWave simulation waveform  
 ├── counter_schematic.png     # Synthesized gate-level schematic  
 └── README.md  
-
+```
 **1. Functional Verification**  
 Simulated using Icarus Verilog, with waveforms viewed in GTKWave.  
 
