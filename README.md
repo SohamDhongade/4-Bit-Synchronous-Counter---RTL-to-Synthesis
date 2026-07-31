@@ -3,10 +3,10 @@ A complete digital design flow for a 4-bit synchronous up-counter with synchrono
 
 Repository Structure  
 counter_4bit/  
-├── counter_4bit.v            # RTL source  
-├── counter_4bit_tb.v         # Testbench  
-├── counter_4bit_synth.v      # Synthesized gate-level netlist (Yosys output)  
-├── counter_schematic.png     # Synthesized gate-level schematic  
+├── counter_4bit.v            |# RTL source  
+├── counter_4bit_tb.v         |# Testbench  
+├── counter_4bit_synth.v      |# Synthesized gate-level netlist (Yosys output)  
+├── counter_schematic.png     |# Synthesized gate-level schematic  
 └── README.md  
 
 1. Functional Verification  
@@ -30,13 +30,13 @@ yosys> write_verilog counter_4bit_synth.v
 Synthesis Results  
 The design synthesized to 10 cells:  
 
-Cell Type	Count	Function  
-$_SDFF_PP0_	4	Positive-edge, sync-reset-to-0 flip-flops (the count register)  
-$_AND_	1	Carry generation  
-$_NAND_	1	Carry generation  
-$_XOR_	2	Sum bits  
-$_XNOR_	1	Sum bit  
-$_NOT_	1	Bit-0 toggle  
+|Cell Type	|Count	|Function  
+|$_SDFF_PP0_	|4	Positive-edge, sync-reset-to-0 flip-flops (the count register)  
+|$_AND_	|1	|Carry generation  
+|$_NAND_	|1	|Carry generation  
+|$_XOR_	|2	|Sum bits  
+|$_XNOR_	|1	|Sum bit  
+|$_NOT_	|1	|Bit-0 toggle  
 
 The combinational logic implements the count + 1 increment as a minimal ripple-carry-style adder, generated automatically by Yosys's ALU/ABC mapping — rather than being written explicitly at the gate level in the RTL.  
 
